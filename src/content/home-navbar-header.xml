@@ -1,0 +1,8 @@
+<content>
+    <a href="index" class="navbar-brand">
+    <img src="images/logo.png" alt="Rbd Logo" class="brand-icon" />
+    <div class="brand-title">
+        <span class="brand-text">瑞博龙科技</span>
+    </div>
+</a>
+</content>

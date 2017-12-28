@@ -1,0 +1,139 @@
+<content>
+    <div id="page-title">
+         <h1 class="page-header text-overflow">拆分单</h1>
+
+    </div>
+    <!--===================================================-->
+    <div id="page-content">
+        <div class="row">
+            <div class="col-md-2 col-lg-3"></div>
+            <div class="panel  col-md-8 col-lg-6">
+                <div class="panel-heading">
+                     <h3 class="panel-title">拆分单信息</h3>
+
+                </div>
+                <form>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12  col-md-4">
+                                <div id="demo-dp-component">
+                                    <div class="form-group">
+                                        <label class="control-label">采购模式</label>
+                                        <select class="form-control selectpicker">
+                                            <option>普通采购</option>
+                                            <option>招标采购</option>
+                                            <option>非招标采购</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">对方单据号</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">采购方式</label>
+                                    <select class="form-control selectpicker">
+                                        <option>个人</option>
+                                        <option>组织</option>
+                                        <option>团体</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group date">
+                                    <label class="control-label">付款日期</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">供应商</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">摘要</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">编号</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">单据类型</label>
+                                    <select class="form-control selectpicker">
+                                        <option>采购订单</option>
+                                        <option>拆分单</option>
+                                        <option>合并单</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">订单号</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group date">
+                                    <label class="control-label">日期</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">收货仓库</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-lg-3"></div>
+            <div class="panel col-md-8 col-lg-6">
+                <div class="panel-heading">
+                     <h3 class="panel-title">拆分物品</h3>
+
+                </div>
+                <div class="panel-body">
+                    <table data-toggle="table" data-url="data/bs-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                        <thead>
+                            <tr>
+                                <th data-field="lineNumber" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">行号</th>
+                                <th data-field="itemCoding" data-align="center" data-sortable="true">物品编码</th>
+                                <th data-field="itemName" data-align="center" data-sortable="true" data-formatter="dateFormatter">物品名称</th>
+                                <th data-field="pecificationModel" data-align="center" data-sortable="true" data-sorter="priceSorter">规格型号</th>
+                                <th data-field="auxiliaryAttributes" data-align="center" data-sortable="true" data-formatter="statusFormatter">辅助属性</th>
+                                <th data-field="company" data-align="center" data-sortable="true" data-formatter="trackFormatter">单位</th>
+                                <th data-field="amountReceivable" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">应收数量</th>
+                                <th data-field="collectionQuantity" data-align="center" data-sortable="true">实收数量</th>
+                                <th data-field="price" data-align="center" data-sortable="true" data-formatter="dateFormatter">单价</th>
+                                <th data-field="totalAmount" data-align="center" data-sortable="true" data-sorter="priceSorter">总金额</th>
+                                <th data-field="remark" data-align="center" data-sortable="true" data-formatter="statusFormatter">备注</th>
+                                <th data-field="numberplit" data-align="center" data-sortable="true" data-formatter="trackFormatter">拆分数量</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</content>

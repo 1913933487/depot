@@ -1,0 +1,216 @@
+<content>
+    <div id="page-title">
+         <h1 class="page-header text-overflow">财务</h1>
+
+    </div>
+    <div id="page-content">
+        <div class="panel">
+            <div class="panel-heading">
+                 <h3 class="panel-title">核销处理</h3>
+
+            </div>
+            <div class="panel-body">
+                <hr class="new-section-sm bord-no" />
+                <div class="panel">
+                    <!-- Bubble Numbers Form Wizard -->
+                    <!--===================================================-->
+                    <div id="demo-step-wz">
+                        <div class="wz-heading wz-w-label bg-info">
+                            <!--Progress bar-->
+                            <div class="progress progress-xs">
+                                <div style="width: 15%;" class="progress-bar progress-bar-dark"></div>
+                            </div>
+                            <!--Nav-->
+                            <ul class="wz-steps wz-icon-bw wz-nav-off text-lg">
+                                <li class="col-xs-3">
+                                    <a data-toggle="tab" href="#demo-step-tab1"> <span class="icon-wrap icon-wrap-xs icon-circle bg-gray mar-ver">
+                                                            <span class="wz-icon icon-txt text-bold">1</span>  <i class="wz-icon-done demo-psi-like"></i>
+
+                                        </span> <small class="wz-desc box-block text-semibold">核销对象</small>
+
+                                    </a>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a data-toggle="tab" href="#demo-step-tab2"> <span class="icon-wrap icon-wrap-xs icon-circle bg-gray mar-ver">
+                                                            <span class="wz-icon icon-txt text-bold">2</span>  <i class="wz-icon-done demo-psi-like"></i>
+
+                                        </span> <small class="wz-desc box-block text-semibold">单据过滤</small>
+
+                                    </a>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a data-toggle="tab" href="#demo-step-tab3"> <span class="icon-wrap icon-wrap-xs icon-circle bg-gray mar-ver">
+                                                            <span class="wz-icon icon-txt text-bold">3</span>  <i class="wz-icon-done demo-psi-like"></i>
+
+                                        </span> <small class="wz-desc box-block text-semibold">核销录入</small>
+
+                                    </a>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a data-toggle="tab" href="#demo-step-tab4"> <span class="icon-wrap icon-wrap-xs icon-circle bg-gray mar-ver">
+                                                            <span class="wz-icon icon-txt text-bold">4</span>  <i class="wz-icon-done demo-psi-like"></i>
+
+                                        </span> <small class="wz-desc box-block text-semibold">核销完成</small>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Form-->
+                        <form class="form-horizontal">
+                            <div class="panel-body">
+                                <div class="tab-content">
+                                    <!--First tab-->
+                                    <div id="demo-step-tab1" class="tab-pane">
+                                        <div class="form-group">
+                                            <label class="col-xs-4 col-lg-5 control-label"></label>
+                                            <div class="col-lg-7">
+                                                <div class="radio">
+                                                    <input id="demo-radio-1" class="magic-radio" type="radio" name="memberType" value="应收" />
+                                                    <label for="demo-radio-1">应收</label>
+                                                    <input id="demo-radio-2" class="magic-radio" type="radio" name="memberType" value="应付" />
+                                                    <label for="demo-radio-2">应付</label>
+                                                    <input id="demo-radio-3" class="magic-radio" type="radio" name="memberType" value="应收冲应付" />
+                                                    <label for="demo-radio-3">应收冲应付</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr/>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">往来单位</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="往来单位" name="firstName" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Second tab-->
+                                    <div id="demo-step-tab2" class="tab-pane fade">
+                                        <div class="row demo-nifty-panel">
+                                            <div class="col-sm-6">
+                                                <div class="panel panel-primary">
+                                                    <div class="panel-heading">
+                                                         <h3 class="panel-title">收款单、其它应收单条件</h3>
+
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <div class="form-group">
+                                                            <label class="col-lg-3 control-label">开始日期</label>
+                                                            <div class="col-lg-7">
+                                                                <input type="date" placeholder="开始日期" name="startDate" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-3 control-label">结束日期</label>
+                                                            <div class="col-lg-7">
+                                                                <input type="date" placeholder="结束日期" name="endDate" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-3 control-label">单据编号</label>
+                                                            <div class="col-lg-7">
+                                                                <input type="text" placeholder="单据编号" name="No" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="panel panel-primary">
+                                                    <div class="panel-heading">
+                                                         <h3 class="panel-title">应收单条件</h3>
+
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <div class="form-group">
+                                                            <label class="col-lg-3 control-label">开始日期</label>
+                                                            <div class="col-lg-7">
+                                                                <input type="date" placeholder="开始日期" name="startDate" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-3 control-label">结束日期</label>
+                                                            <div class="col-lg-7">
+                                                                <input type="date" placeholder="结束日期" name="endDate" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-lg-3 control-label">单据编号</label>
+                                                            <div class="col-lg-7">
+                                                                <input type="text" placeholder="单据编号" name="No" class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Third tab-->
+                                    <div id="demo-step-tab3" class="tab-pane">
+                                        <div class="row demo-nifty-panel">
+                                            <div class="col-sm-6">
+                                                <div class="panel panel-primary">
+                                                    <div class="panel-heading">
+                                                         <h3 class="panel-title">收款单、其它应收单列表</h3>
+
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <table data-toggle="table" data-url="data/bs-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-field="orderInfo" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">单据信息(日期-编号-类型)</th>
+                                                                    <th data-field="amountWritten" data-align="center" data-sortable="true">已核销金额</th>
+                                                                    <th data-field="unAmountWritten" data-align="center" data-sortable="true" data-formatter="dateFormatter">未核销金额</th>
+                                                                    <th data-field="amountWritten" data-align="center" data-sortable="true" data-sorter="priceSorter">本次核销</th>
+                                                                </tr>
+                                                            </thead>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="panel panel-primary">
+                                                    <div class="panel-heading">
+                                                         <h3 class="panel-title">应收单</h3>
+
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <table data-toggle="table" data-url="data/bs-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-field="orderInfo" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">单据信息(日期-编号-类型)</th>
+                                                                    <th data-field="amountWritten" data-align="center" data-sortable="true">已核销金额</th>
+                                                                    <th data-field="unAmountWritten" data-align="center" data-sortable="true" data-formatter="dateFormatter">未核销金额</th>
+                                                                    <th data-field="amountWritten" data-align="center" data-sortable="true" data-sorter="priceSorter">本次核销</th>
+                                                                </tr>
+                                                            </thead>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Fourth tab-->
+                                    <div id="demo-step-tab4" class="tab-pane mar-btm text-center">
+                                         <h4>Thank you</h4>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Footer button-->
+                            <div class="panel-footer text-right">
+                                <div class="box-inline">
+                                    <button type="button" class="previous btn btn-info">上一步</button>
+                                    <button type="button" class="next btn btn-info">下一步</button>
+                                    <button type="button" class="finish btn btn-info" disabled="true">核销</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--===================================================-->
+                    <!-- End Bubble Numbers Form Wizard -->
+                </div>
+            </div>
+        </div>
+    </div>
+</content>

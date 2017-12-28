@@ -1,0 +1,140 @@
+<content>
+    <div id="page-title">
+         <h1 class="page-header text-overflow">采购订单</h1>
+    </div>
+    <ol class="breadcrumb">
+        <li> <a href="index">首页</a>
+        </li>
+        <li class="active">采购订单</li>
+    </ol>
+    <div id="page-content">
+        <div class="row">
+            <div class="col-md-2 col-lg-3"></div>
+            <div class="panel  col-md-8 col-lg-6">
+                <div class="panel-heading">
+                     <h3 class="panel-title">订单信息</h3>
+
+                </div>
+                <form>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12  col-md-4">
+                                <div id="demo-dp-component">
+                                    <div class="form-group date">
+                                        <label class="control-label">单据日期</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">单据号</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">供应商</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">采购类型</label>
+                                    <select class="form-control selectpicker">
+                                        <option>机械设备</option>
+                                        <option>原材料</option>
+                                        <option>零部件</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">采购员</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">默认仓库</label>
+                                    <select class="form-control selectpicker">
+                                        <option>rbd-1-0</option>
+                                        <option>rbd-1-1</option>
+                                        <option>rbd-1-2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">折扣率</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">税率</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">结算方式</label>
+                                    <select class="form-control selectpicker">
+                                        <option>现金</option>
+                                        <option>转账</option>
+                                        <option>支票</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">发运方式</label>
+                                    <select class="form-control selectpicker">
+                                        <option>物流</option>
+                                        <option>送货上门</option>
+                                        <option>空运</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">到货地点</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-lg-3"></div>
+            <div class="panel col-md-8 col-lg-6">
+                <div class="panel-heading">
+                     <h3 class="panel-title">采购物品</h3>
+
+                </div>
+                <div class="panel-body">
+                    <table data-toggle="table" data-url="data/bs-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                        <thead>
+                            <tr>
+                                <th data-field="id" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">编号</th>
+                                <th data-field="name" data-align="center" data-sortable="true">名称</th>
+                                <th data-field="date" data-align="center" data-sortable="true" data-formatter="dateFormatter">订购日期</th>
+                                <th data-field="amount" data-align="center" data-sortable="true" data-sorter="priceSorter">差额</th>
+                                <th data-field="status" data-align="center" data-sortable="true" data-formatter="statusFormatter">状态</th>
+                                <th data-field="track" data-align="center" data-sortable="true" data-formatter="trackFormatter">号码</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</content>

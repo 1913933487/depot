@@ -1,0 +1,26 @@
+<body>
+	<div id="container" class="effect aside-float aside-bright mainnav-lg login" >
+		<header id="navbar">
+			<div id="navbar-container" class="boxed">
+				<div id="navbar-header" class="navbar-header">
+				</div>
+				<div id="navbar-content" class="navbar-content clearfix">
+				</div>
+			</div> 
+		</header>
+		<div class="boxed">
+			<div id="content-container"></div>
+			<aside id="aside-container">
+				<div id="aside"></div>
+			</aside>
+			<nav id="mainnav-container">
+			</nav>
+		</div>
+		<footer id="footer">
+			<p class="pad-lft">&#0169; 2017 Reborndragon</p>
+		</footer>
+		<button class="scroll-top btn">
+			<i class="pci-chevron chevron-up"></i>
+		</button>
+	</div>
+</body>

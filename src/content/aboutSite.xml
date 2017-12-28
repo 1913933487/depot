@@ -1,0 +1,13 @@
+<content>
+    <h2>About This Site</h2>
+    <p>This site is built with the XPE SiteC technologies.  This site is powered by the Extreme HTTP server. </p>
+
+    <p>Build information:</p>
+    <ul>
+        <li>Version: 1.0.@buildNumber@     </li>
+        <li>Build Date: @buildDate@ </li>
+        <li>Revision: @revision@ </li>
+        <li>SiteC version: @sitecVersion@</li>
+    </ul>
+
+</content>    

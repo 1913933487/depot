@@ -1,0 +1,72 @@
+<content>
+    <div id="page-title">
+         <h1 class="page-header text-overflow">采购汇总</h1>
+    </div>
+    <ol class="breadcrumb">
+        <li> <a href="index">首页</a>
+        </li>
+        <li class="active">采购汇总</li>
+    </ol>
+    <div id="page-content">
+        <div class="row">
+            <div class="col-sm-4 col-lg-4">
+                <div class="panel panel-colorful panel-danger text-center">
+                    <div class="panel-heading">
+                         <h2 class="panel-title">0</h2>
+
+                    </div>
+                    <div class="panel-body">
+                        <p>采购单总数</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4">
+                <div class="panel panel-colorful panel-primary text-center">
+                    <div class="panel-heading">
+                         <h2 class="panel-title">0</h2>
+
+                    </div>
+                    <div class="panel-body">
+                        <p>采购商品数</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4">
+                <div class="panel panel-colorful panel-purple text-center">
+                    <div class="panel-heading">
+                         <h2 class="panel-title">0.00</h2>
+
+                    </div>
+                    <div class="panel-body">
+                        <p>采购总金额</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="panel">
+            <div class="panel-body">
+                <div class="panel-heading">
+                     <h3 class="panel-title">采购清单</h3>
+
+                </div>
+                <table data-toggle="table" data-url="../data/p-summary-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                    <thead>
+                        <tr>
+                            <th data-field="purchaseTime" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">采购时间</th>
+                            <th data-field="purchaseNo " data-align="center" data-sortable="true">采购单号</th>
+                            <th data-field="supName" data-align="center" data-sortable="true" data-formatter="dateFormatter">供应商名称</th>
+                            <th data-field="purchaseCode" data-align="center" data-sortable="true" data-sorter="priceSorter">商品编码</th>
+                            <th data-field="purchaseName" data-align="center" data-sortable="true" data-formatter="statusFormatter">商品名称</th>
+                            <th data-field="purchaseUnit" data-align="center" data-sortable="true" data-formatter="trackFormatter">商品规格</th>
+                            <th data-field="purchaseQuantity" data-align="center" data-sortable="true" data-formatter="trackFormatter">采购数量</th>
+                            <th data-field="price" data-align="center" data-sortable="true" data-formatter="statusFormatter">单价</th>
+                            <th data-field="purchasePrice" data-align="center" data-sortable="true" data-formatter="trackFormatter">采购价</th>
+                            <th data-field="subtotal" data-align="center" data-sortable="true" data-formatter="trackFormatter">小计</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</content>

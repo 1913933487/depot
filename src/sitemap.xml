@@ -1,0 +1,296 @@
+<site  domain="dev.test" >
+	<common>
+		<head>
+			<meta  charset="utf-8" />
+			<meta  name="viewport"  content="width=device-width, initial-scale=1" />
+			<meta  http-equiv="X-UA-Compatible"  content="IE=EDGE" />
+			<title>瑞博龙</title>
+			
+			<link href="css/26707bedc25a4344bb99d7e1215825f4.css" rel="stylesheet" />
+			<link href="css/bootstrap.min.css" rel="stylesheet" />
+			<link href="css/bootstrap-table.min.css" rel="stylesheet"/>
+			<link href="css/font-awesome/font-awesome.min.css" rel="stylesheet"/>
+			<link href="css/nifty.min.css" rel="stylesheet" />
+			<link href="css/ionicons.min.css" rel="stylesheet" />
+			<link href="css/nifty-demo-icons.min.css" rel="stylesheet"/>
+            <link href="css/nifty-demo.min.css" rel="stylesheet"/>			
+            <link href="css/premium-icon-screenshot.css" rel="stylesheet"/>
+			<link href="css/themify-icons.min.css" rel="stylesheet" />
+			<link href="css/magic-check.min.css" rel="stylesheet" />
+			<link href="css/rbd.css" rel="stylesheet" />
+            <link href="css/morris.min.css" rel="stylesheet"/>
+            <link href="css/pace.min.css" rel="stylesheet" />
+
+			<script src="js/jquery-2.2.4.min.js" />
+			<script src="js/core.js" />
+			<script src="js/sha256.js" />
+			<script src="js/login.js" />
+			<script src="js/bootstrap.min.js" />
+			<script src="js/bootstrap-table.min.js"></script>
+			<script src="js/common/bootstrapValidator.min.js" />
+			<script src="js/jquery.bootstrap.wizard.min.js"></script>
+			
+            <script src="js/form-wizard.js"></script>
+			<script src="js/common/bootbox.min.js"/>
+			<script src="js/nifty-demo.min.js"/>
+            <script src="js/nifty.min.js"></script>
+            
+            <script src="js/pace.min.js" />
+            <script src="js/morris.min.js"></script>
+            <script src="js/raphael.min.js"></script>
+            <script src="js/jquery.sparkline.min.js"></script>
+            <script src="js/jquery.flot.min.js"></script>
+            <script src="js/jquery.flot.resize.min.js"></script>
+            <script src="js/jquery.flot.pie.min.js"></script>
+        	<script src="js/gauge.min.js"></script>
+            <script src="js/jquery.easypiechart.min.js"></script>
+            <script src="js/charts.js"></script>
+            <script src="js/dashboard.js"></script>
+
+            <script src="js/common/template-web.js" />
+            <script src="js/dateUtil.js"/>
+			<script src="js/formUtils.js"/>
+			<script src="js/rbd.js" />
+			
+		</head>
+	</common>
+	
+	<group id='form'>
+		<head>
+			<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+			<link href="css/bootstrapValidator.min.css" rel="stylesheet" />
+			<script src="js/common/bootstrapValidator.min.js" />
+			<script src="js/common/distpicker.data.min.js" />
+			<script src="js/common/distpicker.min.js" />
+			<script src="js/common/moment.min.js" />
+			<script src="js/common/moment-locale-zh-cn.js" />
+			<script src="js/common/bootstrap-datetimepicker.min.js" />
+			<script src="js/rbd-form-builder.js" />
+		</head>
+	</group>
+
+	<group id='table'>
+		<head>
+			<link href="css/bootstrap-table.min.css" rel="stylesheet" />
+			<script src="js/common/bootstrap-table.min.js" />
+			<script src="js/common/bootstrap-table-zh-CN.min.js" />
+			<script src="js/rbd-table-builder.js" />
+			<script src="js/rbd-grid-edit.js" />
+			<script src="js/rbd-org-table-builder.js" />
+			<script src="js/rbd-grid-edit-orgTable.js" />
+		</head>
+	</group>
+	
+	<group id='tree'>
+		<head>
+			<link href="css/jquery.treetable.min.css" rel="stylesheet" />
+			<script src="js/common/jquery.treetable.min.js" />
+			<script src="js/rbd-treeTable-builder.js" />
+			<script src="js/rbd-grid-edit-treeTable.js" />
+		</head>
+	</group>
+	
+	<group id='dropzone'>
+		<head>
+			<link href="css/dropzone.min.css" rel="stylesheet" />
+			<script src="js/common/dropzone-a.min.js" />
+		</head>
+	</group>
+	
+	<page template="templates/loading.xml" path="">
+		<head>
+			<link href="css/loading.css" rel="stylesheet" />
+			<script src="js/portal/loading.js" />
+		</head>
+	</page>
+
+	<!--首页-->
+	<page template="templates/single.xml" path="home">
+	    <head>
+	        <script src="js/bg-images.js"></script>
+	    </head>
+		<load href="content/portal/login.html" to="content" />
+	</page>
+    
+	<page template="templates/single.xml" path="register">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+		<load href="content/portal/register.html" to="content" />
+	</page>
+	
+	<page template="templates/home.xml" path="index">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/index.xml" to="content-container" />
+	</page>
+
+	<page template="templates/home.xml" path="order">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/order.xml" to="content-container" />
+	</page>
+	
+	<page template="templates/home.xml" path="orderInfo">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/orderInfo.xml" to="content-container" />
+	</page>
+	
+	<page template="templates/home.xml" path="procurementSummary">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/procurementSummary.xml" to="content-container" />
+	</page>
+	
+	<page template="templates/home.xml" path="purchaseOrders">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/purchaseOrders.xml" to="content-container" />
+	</page>	
+	
+	<page template="templates/home.xml" path="suplierSetting">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/suplierSetting.xml" to="content-container" />
+	</page>	
+	
+	<page template="templates/home.xml" path="supliers">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/supliers.xml" to="content-container" />
+	</page>		
+    
+    <!--采购管理-->
+	<page template="templates/home.xml" path="sincePurchase">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/sincePurchase.xml" to="content-container" />
+	</page>	    
+    
+	<page template="templates/home.xml" path="centralizedPurchasing">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/centralizedPurchasing.xml" to="content-container" />
+	</page>
+
+    <page template="templates/home.xml" path="inquiry">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/inquiry.xml" to="content-container" />
+	</page>
+
+	<page template="templates/home.xml" path="tables-static">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/tables-static.xml" to="content-container" />
+	</page>	
+	
+	<page template="templates/home.xml" path="charts">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/charts.xml" to="content-container" />
+	</page>	
+
+	<page template="templates/home.xml" path="financeCope">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/financeCope.xml" to="content-container" />
+	</page>	
+
+	<page template="templates/home.xml" path="financeReceipt">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/financeReceipt.xml" to="content-container" />
+	</page>
+
+	<page template="templates/home.xml" path="financeWrite">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/financeWrite.xml" to="content-container" />
+	</page>
+	
+	<page template="templates/home.xml" path="disaOrder">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/disaOrder.xml" to="content-container" />
+	</page>
+	
+	<page template="templates/home.xml" path="splitOrder">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/splitOrder.xml" to="content-container" />
+	</page>	
+	
+	<page template="templates/home.xml" path="depositApplicationOrder">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/depositApplicationOrder.xml" to="content-container" />
+	</page>
+	
+	<page template="templates/home.xml" path="returnOrder">
+	    <load href="content/home-navbar-header.xml" to="navbar-header" />
+	    <load href="content/home-dropdown-user-menu.xml" to="navbar-content" />
+	    <load href="content/home-mainnav-menu.xml" to="mainnav-container" />
+	    <load href="content/portal/returnOrder.xml" to="content-container" />
+	</page>
+	
+	<resources  dir="images"  path="images" />
+	<resources  dir="css"  path="css" />
+	<resources  dir="js"  path="js" />
+	<resources  dir="fonts"  path="fonts" />
+	
+	<services>
+		<service path="/user" userdb="users.db" storeType="binary" primaryKey="id"
+		    root="admin" email="bonsai@baipeng.org" password="demo.admin" 
+			secret="msdemo" aesKey="3CCLut8kJhBcCQ0kKwGmSZhhIFLzm74wE7DJMv8lpII=" 
+			assignGroup="admin:63" groups="customer,manager,supervisor"
+		>
+			<get xpipe="http://www.xmlpipe.org/xpe/db/user/validate" />
+			<post xpipe="http://www.xmlpipe.org/xpe/db/user/register" />
+			<post path="/user/password/reset" xpipe="http://www.xmlpipe.org/xpe/db/user/token/reset" />
+			<post path="/user/password/reset/token" xpipe="http://www.xmlpipe.org/xpe/db/user/password/reset/token" />
+			<get path="/user/session" xpipe="http://www.xmlpipe.org/xpe/db/user/session/get" />
+			<post path="/user/session" xpipe="http://www.xmlpipe.org/xpe/db/user/session/update" />
+			<post path="user/session/changepassword" xpipe="http://www.xmlpipe.org/xpe/db/user/session/changepassword" />
+			<get path="user/session/list" xpipe="http://www.xmlpipe.org/xpe/db/user/session/list" />
+			<del path="/user/del" xpipe="http://www.xmlpipe.org/xpe/db/user/admin/del" />
+			<get path="/user/login" xpipe="http://www.xmlpipe.org/xpe/db/user/nonce" />
+			<post path="/user/login" xpipe="http://www.xmlpipe.org/xpe/db/user/login" />
+			<post path="/signoff" xpipe="http://www.xmlpipe.org/xpe/db/user/session/signoff" />
+			<post path="user/group" xpipe="http://www.xmlpipe.org/xpe/db/user/admin/group" />
+			<del path="user/group" xpipe="http://www.xmlpipe.org/xpe/db/user/admin/group" />
+
+			<webSocket path="ws/users" protocol="dbsync" xpipe="http://www.xmlpipe.org/xpe/ms/record" dbProvider="users.db" />
+		</service>
+		
+		<service store="supliers.db" storeType="binary" primaryKey="id" seqKey="true"
+			dict="id,code,supName,representative,range,address,track,status"
+			fields="code,supName,range" 
+		>
+		    <get path="/db/supliers" xpipe="http://www.xmlpipe.org/xpe/db/unique/record/get" />
+		    <del path="/db/supliers/del" xpipe="http://www.xmlpipe.org/xpe/db/unique/record/del" />
+            <post path="/db/supliers" xpipe="http://www.xmlpipe.org/xpe/db/unique/record/post" />
+		    <get path="/db/supliers/sel" xpipe="http://www.xmlpipe.org/xpe/db/search" />
+		</service>
+		
+	</services>
+</site>

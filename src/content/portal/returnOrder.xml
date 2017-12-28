@@ -1,0 +1,104 @@
+<content>
+    <div id="page-title">
+         <h1 class="page-header text-overflow">退货单</h1>
+
+    </div>
+    <!--===================================================-->
+    <div id="page-content">
+        <div class="row">
+            <div class="col-md-2 col-lg-3"></div>
+            <div class="panel  col-md-8 col-lg-6">
+                <div class="panel-heading">
+                     <h3 class="panel-title">退货信息</h3>
+
+                </div>
+                <form>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12  col-md-4">
+                                <div id="demo-dp-component">
+                                    <div class="form-group">
+                                        <label class="control-label">退货单编号</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group date">
+                                    <label class="control-label">退货日期</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group date">
+                                    <label class="control-label">收货日期</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">原采购单号</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">部门</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">业务员</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">供应商编号</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">供应商</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-lg-3"></div>
+            <div class="panel col-md-8 col-lg-6">
+                <div class="panel-heading">
+                     <h3 class="panel-title">退货物品</h3>
+
+                </div>
+                <div class="panel-body">
+                    <table data-toggle="table" data-url="data/bs-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                        <thead>
+                            <tr>
+                                <th data-field="lineNumber" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">行号</th>
+                                <th data-field="code" data-align="center" data-sortable="true">编码</th>
+                                <th data-field="productName" data-align="center" data-sortable="true" data-formatter="dateFormatter">品名</th>
+                                <th data-field="specifications" data-align="center" data-sortable="true" data-sorter="priceSorter">规格</th>
+                                <th data-field="returnReason" data-align="center" data-sortable="true" data-formatter="statusFormatter">退货原因</th>
+                                <th data-field="company" data-align="center" data-sortable="true" data-formatter="trackFormatter">单位</th>
+                                <th data-field="number" data-align="center" data-sortable="true" data-sorter="priceSorter">数量</th>
+                                <th data-field="price" data-align="center" data-sortable="true" data-formatter="statusFormatter">单价</th>
+                                <th data-field="totalMoney" data-align="center" data-sortable="true" data-formatter="trackFormatter">总金额</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</content>

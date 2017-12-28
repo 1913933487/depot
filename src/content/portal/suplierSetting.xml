@@ -1,0 +1,325 @@
+<content>
+    <div id="page-title">
+         <h1 class="page-header text-overflow">供应商</h1>
+
+    </div>
+     <ol class="breadcrumb">
+        <li> <a href="index">首页</a>
+
+        </li>
+        <li class="active">供应商设置</li>
+    </ol>
+    <div id="page-content">
+        <div class="eq-height clearfix">
+            <div class="panel col-md-offset-3 col-md-8 col-lg-6">
+                <div class="panel-body">
+                    <div id="demo-bv-wz">
+                        <div class="wz-heading pad-top">
+                            <!--Nav-->
+                            <ul class="row wz-step wz-icon-bw wz-nav-off mar-top">
+                                <li class="col-xs-3">
+                                    <a data-toggle="tab" href="#demo-bv-tab1"> <span class="text-danger"><i class="demo-pli-information icon-2x"></i>
+                                                        </span>
+
+                                        <p class="text-semibold mar-no">供应商信息</p>
+                                    </a>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a data-toggle="tab" href="#demo-bv-tab2"> <span class="text-warning"><i class="demo-pli-male icon-2x"></i>
+                                                        </span>
+
+                                        <p class="text-semibold mar-no">供应商证书</p>
+                                    </a>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a data-toggle="tab" href="#demo-bv-tab3"> <span class="text-success"><i class="demo-pli-medal-2 icon-2x"></i>
+                                                        </span>
+
+                                        <p class="text-semibold mar-no">联系信息</p>
+                                    </a>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a data-toggle="tab" href="#demo-bv-tab4"> <span class="text-success"><i class="demo-pli-medal-2 icon-2x"></i>
+                                                        </span>
+
+                                        <p class="text-semibold mar-no">供货货品及报价</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--progress bar-->
+                        <div class="progress progress-xs">
+                            <div class="progress-bar progress-bar-primary"></div>
+                        </div>
+                        <!--Form-->
+                        <form id="demo-bv-wz-form" class="form-horizontal">
+                            <div class="panel-body">
+                                <div class="tab-content">
+                                    <!--First tab-->
+                                    <div id="demo-bv-tab1" class="tab-pane">
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">公司名称</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" class="form-control" name="comapnyName" placeholder="公司名称" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">公司类型</label>
+                                            <div class="col-lg-7">
+                                                <select class="form-control selectpicker">
+                                                    <option>民营</option>
+                                                    <option>国企</option>
+                                                    <option>海外</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">法人代表</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" class="form-control" name="representative" placeholder="法人代表" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">经营范围</label>
+                                            <div class="col-lg-7">
+                                                <select class="form-control selectpicker">
+                                                    <option>医疗</option>
+                                                    <option>机械</option>
+                                                    <option>服装</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">地址</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" class="form-control" name="address" placeholder="地址" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">邮编</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" class="form-control" name="zipCode" placeholder="邮编" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">电话</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" class="form-control" name="phone" placeholder="电话" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">传真</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" class="form-control" name="fax" placeholder="传真" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">邮箱</label>
+                                            <div class="col-lg-7">
+                                                <input type="email" class="form-control" name="email" placeholder="邮箱" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">成立日期</label>
+                                            <div class="col-lg-7">
+                                                <div id="regDate">
+                                                    <!--<input type="date" class="form-control" name="regDate" placeholder="成立日期" />-->
+                                                    <div class="input-group date">
+                                                        <input type="text" class="form-control" /> <span class="input-group-addon"><i class="icon-th"></i>
+                                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Second tab-->
+                                    <div id="demo-bv-tab2" class="tab-pane fade">
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">营业执照</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="营业执照" name="businessLicense" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">组织代码证</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="组织代码证" name="orgCode" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">税务登记证</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="税务登记证" name="tax" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">法人身份证</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="法人身份证" name="corporateIdCard" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">产品证书信息及图片</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="产品证书信息及图片" name="" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Third tab-->
+                                    <!--Fourth tab-->
+                                    <div id="demo-bv-tab3" class="tab-pane">
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">姓名</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="姓名" name="name" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">性别</label>
+                                            <div class="col-lg-7">
+                                                <select class="form-control selectpicker">
+                                                    <option>男</option>
+                                                    <option>女</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">职务</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="职务" name="position" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">公司电话</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="公司电话" name="companyPhone" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">手机</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="手机" name="telephone" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">邮箱</label>
+                                            <div class="col-lg-7">
+                                                <input type="email" placeholder="邮箱" name="contactEmail" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">身份证</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="身份证" name="IDCard" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">照片</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="照片" name="photo" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">户名</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="户名" name="accountName" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">开户行</label>
+                                            <div class="col-lg-7">
+                                                <select class="form-control selectpicker">
+                                                    <option>工商银行</option>
+                                                    <option>农业银行</option>
+                                                    <option>中国银行</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">银行账户</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="银行账户" name="bankAccount" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- fifth tab -->
+                                    <div id="demo-bv-tab4" class="tab-pane">
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">供应商货号</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="供应商货号" name="supNo" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">名称</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="名称" name="supName" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">品牌</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="品牌" name="supBrand" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">型号</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="型号" name="supType" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">单价</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="单价" name="price" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">单价</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="单价" name="price" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">价格有效期</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="价格有效期" name="validity" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">自有品牌</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="自有品牌" name="ownbrand" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">代理品牌</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="代理品牌" name="actingBrand" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">证书图片</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="证书图片" name="" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Footer button-->
+                            <div class="panel-footer text-right">
+                                <div class="box-inline">
+                                    <button type="button" class="previous btn btn-primary">上一步</button>
+                                    <button type="button" class="next btn btn-primary">下一步</button>
+                                    <button type="button" class="finish btn btn-warning" disabled="disabled">完成</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</content>

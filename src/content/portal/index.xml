@@ -1,0 +1,270 @@
+<content>
+    <div id="page-title">
+     <h1 class="page-header text-overflow"></h1>
+    <div class="searchbox">
+        <div class="input-group custom-search-form">
+            <input type="text" class="form-control" placeholder="Search.." /> <span class="input-group-btn">
+            <button class="text-muted" type="button"><i class="demo-pli-magnifi-glass"></i>
+            </button>
+            </span>
+        </div>
+    </div>
+</div>
+<div id="page-content">
+    <div class="row">
+        <div class="col-lg-7">
+            <div id="demo-panel-network" class="panel">
+                <div class="panel-heading">
+                    <div class="panel-control">
+                        <button id="demo-panel-network-refresh" data-toggle="panel-overlay" data-target="#demo-panel-network" class="btn"><i class="demo-pli-repeat-2 icon-lg"></i>
+                        </button>
+                        <div class="btn-group">
+                            <button class="dropdown-toggle btn" data-toggle="dropdown" aria-expanded="false"><i class="demo-pli-gear icon-lg"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li> <a href="#">Action</a>
+
+                                </li>
+                                <li> <a href="#">Another action</a>
+
+                                </li>
+                                <li> <a href="#">Something else here</a>
+
+                                </li>
+                                <li class="divider"></li>
+                                <li> <a href="#">Separated link</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                     <h3 class="panel-title">广播</h3>
+                </div>
+                <div id="morris-chart-network" class="morris-full-content"></div>
+                <div class="panel-body">
+                    <div class="row pad-top">
+                        <div class="col-lg-8">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media">
+                                        <p class="text-semibold text-main">气温</p>
+                                        <div class="media-left pad-no"> <span class="text-2x text-semibold text-nowrap text-main"> <i class="demo-pli-temperature"></i> 19.6</span>
+
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="mar-no">°C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-body pad-lft">
+                                    <div class="pad-btm">
+                                        <p class="text-semibold text-main mar-no">今日提示</p> <small>一个美好的宁静已经占据了我的整个灵魂，就像我全心全意享受春天的美好的早晨.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <p class="text-semibold text-main">空气质量</p>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="media">
+                                        <div class="media-left"> <span class="text-2x text-semibold text-main">39</span>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="mar-no">μg/m³</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="clearfix">
+                                        <p class="pull-left mar-no">污染度</p>
+                                        <p class="pull-right mar-no">良</p>
+                                    </div>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar progress-bar-info" style="width: 20%;"> <span class="sr-only">20</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="row">
+                <div class="col-sm-6 col-lg-6">
+                    <div class="panel panel-success panel-colorful">
+                        <div class="pad-all">
+                            <p class="text-lg text-semibold"><i class="demo-pli-data-storage icon-fw"></i>销售额</p>
+                            <p class="mar-no"> <span class="pull-right text-bold">$764524</span>今天</p>
+                            <p class="mar-no"> <span class="pull-right text-bold">$78914616448</span>过去七天</p>
+                        </div>
+                        <div class="pad-all text-center">
+                            <div id="demo-sparkline-area"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="panel panel-info panel-colorful">
+                        <div class="pad-all">
+                            <p class="text-lg text-semibold"><i class="demo-pli-wallet-2 icon-fw"></i> 收益</p>
+                            <p class="mar-no"> <span class="pull-right text-bold">$764</span>今天</p>
+                            <p class="mar-no"> <span class="pull-right text-bold">$1,332</span>过去七天</p>
+                        </div>
+                        <div class="pad-all text-center">
+                            <div id="demo-sparkline-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-6">
+                    <div class="panel panel-purple panel-colorful">
+                        <div class="pad-all">
+                            <p class="text-lg text-semibold"><i class="demo-pli-bag-coins icon-fw"></i> 销售</p>
+                            <p class="mar-no"> <span class="pull-right text-bold">$764</span>今天</p>
+                            <p class="mar-no"> <span class="pull-right text-bold">$1,332</span>过去七天</p>
+                        </div>
+                        <div class="pad-all text-center">
+                            <div id="demo-sparkline-bar" class="box-inline"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="panel panel-warning panel-colorful">
+                        <div class="pad-all">
+                            <p class="text-lg text-semibold"><i class="demo-pli-check icon-fw"></i> 工作进度</p>
+                            <p class="mar-no"> <span class="pull-right text-bold">34</span>已完成</p>
+                            <p class="mar-no"> <span class="pull-right text-bold">79</span>总共</p>
+                        </div>
+                        <div class="pad-all">
+                            <ul class="list-group list-unstyled">
+                                <li class="mar-btm"> <span class="label label-warning pull-right">15%</span>
+
+                                    <p>进度</p>
+                                    <div class="progress progress-md">
+                                        <div style="width: 15%;" class="progress-bar progress-bar-light"> <span class="sr-only">15%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="new-section-sm" />
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel panel-primary panel-colorful">
+                        <div class="pad-all text-center"> <span class="text-3x text-thin">53</span>
+                            <p>销售</p> <i class="demo-pli-shopping-bag icon-lg"></i>
+                        </div>
+                    </div>
+                    <div class="panel panel-warning panel-colorful">
+                        <div class="pad-all text-center"> <span class="text-3x text-thin">68</span>
+                            <p>消息</p> <i class="demo-psi-mail icon-lg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-purple panel-colorful">
+                        <div class="pad-all text-center"> <span class="text-3x text-thin">32</span>
+                            <p>项目</p> <i class="demo-pli-coding"></i>
+                        </div>
+                    </div>
+                    <div class="panel panel-dark panel-colorful">
+                        <div class="pad-all text-center"> <span class="text-3x text-thin">12</span>
+                            <p>报告</p> <i class="demo-psi-receipt-4 icon-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel media middle pad-all">
+                        <div class="media-left"> <span class="icon-wrap icon-wrap-sm icon-circle bg-success"> <i class="demo-pli-male icon-2x"></i></span>
+                        </div>
+                        <div class="media-body">
+                            <p class="text-2x mar-no text-semibold">241</p>
+                            <p class="text-muted mar-no">客户数量</p>
+                        </div>
+                    </div>
+                    <div class="panel media middle">
+                        <div class="media-left bg-mint pad-all"> <i class="demo-pli-speech-bubble-7 icon-3x"></i>
+                        </div>
+                        <div class="media-body pad-all">
+                            <p class="text-2x mar-no text-semibold">34</p>
+                            <p class="text-muted mar-no">Comments</p>
+                        </div>
+                    </div>
+                    <div class="panel media pad-all bg-info">
+                        <div class="media-left"> <span class="icon-wra icon-wap-sm bg-ifo"> <i class="demo-pli-mail icon-3x"></i></span>
+                        </div>
+                        <div class="media-body">
+                            <p class="text-2x mar-no text-semibold">543</p>
+                            <p class="mar-no">新邮件</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-success panel-colorful">
+                        <div class="pad-all media">
+                            <div class="media-left"> <i class="demo-pli-male icon-3x icon-fw"></i>
+                            </div>
+                            <div class="media-body">
+                                <p class="h3 text-light mar-no media-heading">314,675</p> <span>今日访问</span>
+                            </div>
+                        </div>
+                        <div class="progress progress-xs progress-success mar-no">
+                            <div role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-light" style="width: 30%"></div>
+                        </div>
+                        <div class="pad-all text-sm"> <span class="text-semibold">30%</span>高于昨天</div>
+                    </div>
+                    <div class="panel panel-primary panel-colorful">
+                        <div class="pad-all media">
+                            <div class="media-left"> <i class="demo-pli-add-cart icon-3x icon-fw"></i>
+                            </div>
+                            <div class="media-body">
+                                <p class="h3 text-light mar-no media-heading">5,345</p> <span>新订单</span>
+                            </div>
+                        </div>
+                        <div class="progress progress-xs progress-dark-base mar-no">
+                            <div role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-light" style="width: 75%"></div>
+                        </div>
+                        <div class="pad-all text-sm bg-trans-dark"> <span class="text-semibold">954</span>这个月销售</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+            <div class="panel">
+                <div class="panel-body text-center bg-danger"> <i class="demo-pli-speech-bubble-7 icon-5x"></i>
+                </div>
+                <div class="pad-all text-center">
+                    <p class="text-semibold text-lg mar-no text-main">审核</p>
+                    <p class="h2 text-thin mar-no">873</p>
+                    <p class="text-sm text-overflow pad-top"> <span class="text-bold">74</span>未审核</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+            <div class="panel panel-dark panel-colorful">
+                <div class="panel-body text-center"> <i class="demo-pli-coin icon-5x"></i>
+                </div>
+                <div class="pad-all text-center">
+                    <p class="text-semibold text-lg mar-no">收益</p>
+                    <p class="h2 text-light text-semibold mar-no">$7,428</p>
+                    <p class="text-sm text-overflow pad-top"> <span class="label label-dark">22,675</span>总收益</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</content>

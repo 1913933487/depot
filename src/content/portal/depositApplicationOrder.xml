@@ -1,0 +1,38 @@
+<content>
+    <div id="page-title">
+         <h1 class="page-header text-overflow">定金申请单</h1>
+
+        <!--Searchbox-->
+        <div class="searchbox">
+            <div class="input-group custom-search-form">
+                <input type="text" class="form-control" placeholder="Search.." /> <span class="input-group-btn">
+                                    <button class="text-muted" type="button"><i class="demo-pli-magnifi-glass"></i>
+
+                                    </button>
+                                </span>
+
+            </div>
+        </div>
+    </div>
+    <div id="page-content">
+        <div class="panel">
+            <div class="panel-heading">
+                 <h3 class="panel-title">定金申请信息</h3>
+
+            </div>
+            <div class="panel-body">
+                <table data-toggle="table" data-url="" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                    <thead>
+                        <tr>
+                            <th data-field="code" data-align="center" data-sortable="true">付款人</th>
+                            <th data-field="supName" data-align="center" data-sortable="true">金额</th>
+                            <th data-field="representative" data-align="center" data-sortable="true">收款人</th>
+                            <th data-field="range" data-align="center" data-sortable="true" >内容</th>
+                            <th data-field="address" data-align="center" data-sortable="true">日期</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</content>

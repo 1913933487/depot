@@ -1,0 +1,45 @@
+<content>
+    <div id="page-title">
+         <h1 class="page-header text-overflow">供应商</h1>
+
+        <!--Searchbox-->
+        <div class="searchbox">
+            <div class="input-group custom-search-form">
+                <input type="text" class="form-control" placeholder="Search.." /> <span class="input-group-btn">
+                                    <button class="text-muted" type="button"><i class="demo-pli-magnifi-glass"></i>
+
+                                    </button>
+                                </span>
+            </div>
+        </div>
+    </div>
+    <ol class="breadcrumb">
+        <li> <a href="index">首页</a>
+
+        </li>
+        <li class="active">供应商</li>
+    </ol>
+    <div id="page-content">
+        <div class="panel">
+            <div class="panel-heading">
+                 <h3 class="panel-title">供应商列表</h3>
+
+            </div>
+            <div class="panel-body">
+                <table data-toggle="table" data-url="/db/supliers/sel?all=all" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                    <thead>
+                        <tr>
+                            <th data-field="code" data-align="center" data-sortable="true">编号</th>
+                            <th data-field="supName" data-align="center" data-sortable="true">供应商名称</th>
+                            <th data-field="representative" data-align="center" data-sortable="true">法人代表</th>
+                            <th data-field="range" data-align="center" data-sortable="true" >经营范围</th>
+                            <th data-field="address" data-align="center" data-sortable="true">地址</th>
+                            <th data-field="track" data-align="center" data-sortable="true">电话</th>
+                            <th data-field="status" data-align="center" data-sortable="true">状态</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</content>

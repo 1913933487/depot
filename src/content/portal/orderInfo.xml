@@ -1,0 +1,118 @@
+<content>
+    <div id="page-title">
+         <h1 class="page-header text-overflow">订货单</h1>
+    </div>
+    <ol class="breadcrumb">
+        <li> <a href="index">首页</a>
+
+        </li>
+        <li class="active">订单</li>
+    </ol>
+    <div id="page-content">
+        <div class="panel">
+            <div class="panel-heading">
+                 <h3 class="panel-title">订单详情</h3>
+
+            </div>
+            <div class="panel-body">
+                <div class="tab-base">
+                    <!--Nav Tabs-->
+                    <ul class="nav nav-tabs">
+                        <li class="active"> <a data-toggle="tab" href="#demo-lft-tab-1">订单详情</a>
+
+                        </li>
+                        <li> <a data-toggle="tab" href="#demo-lft-tab-2">出库发货记录</a>
+
+                        </li>
+                        <li> <a data-toggle="tab" href="#demo-lft-tab-3">收款记录</a>
+
+                        </li>
+                    </ul>
+                    <!--Tabs Content-->
+                    <div class="tab-content">
+                        <div id="demo-lft-tab-1" class="tab-pane fade active in">
+                            <label class="control-label">订单号：</label><small class="text-muted">11223344 </small>
+
+                            <label class="control-label">客户名称：</label><small class="text-muted">河南省昌隆文具商行【待签代理】</small>
+
+                            <label class="control-label">业务员：</label><small class="text-muted">djb</small>
+
+                            <hr/>
+                            <table data-toggle="table" data-url="data/bs-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                                <thead>
+                                    <tr>
+                                        <th data-field="mainPicture" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">主图</th>
+                                        <th data-field="productCode" data-align="center" data-sortable="true">商品编码</th>
+                                        <th data-field="productName" data-align="center" data-sortable="true" data-formatter="dateFormatter">商品名称</th>
+                                        <th data-field="specification" data-align="center" data-sortable="true" data-sorter="priceSorter">规格</th>
+                                        <th data-field="number" data-align="center" data-sortable="true" data-formatter="statusFormatter">数量</th>
+                                        <th data-field="unit" data-align="center" data-sortable="true" data-formatter="trackFormatter">单位</th>
+                                        <th data-field="productParam" data-align="center" data-sortable="true" data-formatter="trackFormatter">商品参数</th>
+                                        <th data-field="price" data-align="center" data-sortable="true" data-formatter="statusFormatter">单价</th>
+                                        <th data-field="subtotal" data-align="center" data-sortable="true" data-formatter="trackFormatter">金额小计</th>
+                                        <th data-field="remark" data-align="center" data-sortable="true" data-formatter="trackFormatter">备注</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div id="demo-lft-tab-2" class="tab-pane fade">
+                            <!--Primary Panel-->
+                            <!--===================================================-->
+                            <div class="panel panel-bordered panel-primary">
+                                <div class="panel-heading">
+                                     <h3 class="panel-title">收货待确认</h3>
+
+                                </div>
+                                <div class="panel-body">
+                                    <p>订单号 : DH-O-20171220-111127河南省昌隆文具商行【待签代理】 收货信息：，张能，18888888888，河南省宝安北路笋岗文具批发市场A</p>
+                                </div>
+                            </div>
+                            <!--===================================================-->
+                            <!--End Primary Panel-->
+                            <hr/>
+                            <table data-toggle="table" data-url="data/bs-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                                <thead>
+                                    <tr>
+                                        <th data-field="mainPicture" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">主图</th>
+                                        <th data-field="productCode" data-align="center" data-sortable="true">商品编码</th>
+                                        <th data-field="productName" data-align="center" data-sortable="true" data-formatter="dateFormatter">商品名称</th>
+                                        <th data-field="specification" data-align="center" data-sortable="true" data-sorter="priceSorter">规格</th>
+                                        <th data-field="number" data-align="center" data-sortable="true" data-formatter="statusFormatter">数量</th>
+                                        <th data-field="unit" data-align="center" data-sortable="true" data-formatter="trackFormatter">单位</th>
+                                        <th data-field="productParam" data-align="center" data-sortable="true" data-formatter="trackFormatter">商品参数</th>
+                                        <th data-field="price" data-align="center" data-sortable="true" data-formatter="statusFormatter">单价</th>
+                                        <th data-field="subtotal" data-align="center" data-sortable="true" data-formatter="trackFormatter">金额小计</th>
+                                        <th data-field="remark" data-align="center" data-sortable="true" data-formatter="trackFormatter">备注</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <hr/>
+                            <div>
+                                <p>状态：待签收</p>
+                                <p>出库信息 出库编号：L-20170713-111128出库时间：2017-12-20 19:01出库仓库：深圳仓</p>
+                                <p>物流信息 发货日期：2017-12-20 19:01物流公司：暂无物流单号：暂无物流备注：暂无</p>
+                            </div>
+                        </div>
+                        <div id="demo-lft-tab-3" class="tab-pane fade">
+                            <p>订单号：DH-O-20171220-111127</p>
+                            <p>订单金额：1,624.60已付款：0.00待确认：0.00待支付：1,624.60</p>
+                            <hr/>
+                            <table data-toggle="table" data-url="data/bs-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                                <thead>
+                                    <tr>
+                                        <th data-field="payNumber" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">支付流水号</th>
+                                        <th data-field="time" data-align="center" data-sortable="true">时间</th>
+                                        <th data-field="paymentAmount" data-align="center" data-sortable="true" data-formatter="dateFormatter">付款金额</th>
+                                        <th data-field="paymentMethod" data-align="center" data-sortable="true" data-sorter="priceSorter">支付方式</th>
+                                        <th data-field="accountsReceivable" data-align="center" data-sortable="true" data-formatter="statusFormatter">收款账户</th>
+                                        <th data-field="status" data-align="center" data-sortable="true" data-formatter="trackFormatter">状态</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</content>

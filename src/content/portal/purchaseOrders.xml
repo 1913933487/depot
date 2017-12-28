@@ -1,0 +1,287 @@
+<content>
+    <div id="page-title">
+         <h1 class="page-header text-overflow">采购</h1>
+
+    </div>
+    <div id="page-content">
+        <div class="panel">
+            <form>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12  col-md-4">
+                            <div id="demo-dp-component">
+                                <div class="form-group">
+                                    <div class="radio">
+                                        <input id="demo-radio-1" class="magic-radio" type="radio" name="memberType" value="进货单" />
+                                        <label for="demo-radio-1">进货单</label>
+                                        <input id="demo-radio-2" class="magic-radio" type="radio" name="memberType" value="退货单" />
+                                        <label for="demo-radio-2">退货单</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group date">
+                                <label class="col-lg-3 control-label">单据日期</label>
+                                <input type="text" placeholder="单据日期" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">单据号</label>
+                                <input type="text" placeholder="单据号" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">供应商</label>
+                                <input type="text" placeholder="供应商" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">采购部门</label>
+                                <input type="text" placeholder="采购部门" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">采购员</label>
+                                <input type="text" placeholder="采购员" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">默认仓库</label>
+                                <select class="form-control selectpicker">
+                                    <option>深圳仓</option>
+                                    <option>深圳仓-1</option>
+                                    <option>深圳仓-2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">采购类型</label>
+                                <select class="form-control selectpicker">
+                                    <option>普通采购</option>
+                                    <option>网上采购</option>
+                                    <option>超市采购</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">发运方式</label>
+                                <select class="form-control selectpicker">
+                                    <option>空运</option>
+                                    <option>海运</option>
+                                    <option>汽车</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">折扣率</label>
+                                <input type="text" placeholder="折扣率" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">税率</label>
+                                <input type="text" placeholder="税率" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr/>
+        <div class="panel">
+            <div class="panel-heading">
+                 <h4 class="panel-title">进货清单</h4>
+
+            </div>
+            <div class="panel-body">
+                <table data-toggle="table" data-url="data/bs-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                    <thead>
+                        <tr>
+                            <th data-field="operating" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">操作</th>
+                            <th data-field="inventoryName" data-align="center" data-sortable="true">存货名称</th>
+                            <th data-field="stockCode" data-align="center" data-sortable="true" data-formatter="dateFormatter">存货编码</th>
+                            <th data-field="barcode" data-align="center" data-sortable="true" data-sorter="priceSorter">条码</th>
+                            <th data-field="inventoryClassification" data-align="center" data-sortable="true" data-formatter="statusFormatter">存货分类</th>
+                            <th data-field="specification" data-align="center" data-sortable="true" data-formatter="trackFormatter">规格型号</th>
+                            <th data-field="unit" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">单位</th>
+                            <th data-field="warehouse" data-align="center" data-sortable="true">仓库</th>
+                            <th data-field="quantity" data-align="center" data-sortable="true" data-formatter="dateFormatter">数量</th>
+                            <th data-field="price" data-align="center" data-sortable="true" data-sorter="priceSorter">单价</th>
+                            <th data-field="afterPrice" data-align="center" data-sortable="true" data-formatter="statusFormatter">折后单价</th>
+                            <th data-field="noTaxPrice" data-align="center" data-sortable="true" data-formatter="trackFormatter">无税单价</th>
+                            <th data-field="prediscountAmount" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">折前金额</th>
+                            <th data-field="discountRate" data-align="center" data-sortable="true">折扣率</th>
+                            <th data-field="discountAmount" data-align="center" data-sortable="true" data-formatter="dateFormatter">折扣额</th>
+                            <th data-field="noTaxAmount" data-align="center" data-sortable="true" data-sorter="priceSorter">无税金额</th>
+                            <th data-field="purchaseAmount" data-align="center" data-sortable="true" data-formatter="statusFormatter">采购金额</th>
+                            <th data-field="procurementCosts" data-align="center" data-sortable="true" data-formatter="trackFormatter">采购费用</th>
+                            <th data-field="taxRate" data-align="center" data-sortable="true" data-formatter="dateFormatter">税率</th>
+                            <th data-field="tax" data-align="center" data-sortable="true" data-sorter="priceSorter">税额</th>
+                            <th data-field="auxiliaryProperties" data-align="center" data-sortable="true" data-formatter="statusFormatter">辅助属性</th>
+                            <th data-field="remark" data-align="center" data-sortable="true" data-formatter="trackFormatter">备注</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <hr/>
+        <div class="panel">
+            <form>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12  col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">折让金额</label>
+                                <input type="text" placeholder="折让金额" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group date">
+                                <label class="control-label">本次付款</label>
+                                <input type="text" placeholder="本次付款" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">本次欠款</label>
+                                <input type="text" placeholder="本次欠款" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">采购费用</label>
+                                <input type="text" placeholder="供应商" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">结算账户</label>
+                                <input type="text" placeholder="结算账户" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4 col-lg-12">
+                            <div class="form-group">
+                                <label class="control-label">支付备注</label>
+                                <textarea rows="3" cols="20" placeholder="支付备注" class="form-control" style="resize:none" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4 col-lg-12">
+                            <div class="form-group">
+                                <label class="control-label">备注</label>
+                                <textarea rows="3" cols="20" placeholder="备注" class="form-control" style="resize:none" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr/>
+        <div class="panel">
+            <!--Accordion title-->
+            <div class="panel-heading">
+                 <h4 class="panel-title">
+					                         <div class="demo-icon"><i class="ion-chevron-down"></i><a data-parent="#accordion" data-toggle="collapse" href="#collapseOne">更多信息</a></div>
+					                    </h4>
+
+            </div>
+            <!--Accordion content-->
+            <div class="panel-collapse collapse in" id="collapseOne">
+                <form>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12  col-md-4">
+                                <div id="demo-dp-component3">
+                                    <div class="form-group date">
+                                        <label class="control-label">结算方式</label>
+                                        <input type="text" placeholder="结算方式" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">经手人</label>
+                                    <input type="text" placeholder="经手人" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">联系人</label>
+                                    <input type="text" placeholder="联系人" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">联系电话</label>
+                                    <input type="text" placeholder="联系电话" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4 col-lg-8">
+                                <div class="form-group">
+                                    <label class="control-label">采购地址</label>
+                                    <input type="text" placeholder="采购地址" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">制单人</label>
+                                    <input type="text" placeholder="制单人" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group date">
+                                    <label class="control-label">创建时间</label>
+                                    <input type="text" placeholder="创建时间" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">修改人</label>
+                                    <input type="text" placeholder="修改人" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">作废人</label>
+                                    <input type="text" placeholder="作废人" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4 col-lg-8">
+                                <div class="form-group date">
+                                    <label class="control-label">作废时间</label>
+                                    <input type="text" placeholder="作废时间" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</content>

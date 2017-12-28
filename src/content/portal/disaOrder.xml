@@ -1,0 +1,239 @@
+<content>
+    <div id="page-title">
+         <h1 class="page-header text-overflow">采购</h1>
+    </div>
+    <ol class="breadcrumb">
+        <li> <a href="index">首页</a>
+        </li>
+        <li class="active">采购</li>
+    </ol>
+    <div id="page-content">
+        <div class="panel">
+            <form>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group date">
+                                <label class="col-lg-3 control-label">单据日期</label>
+                                <input type="text" placeholder="单据日期" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">单据号</label>
+                                <input type="text" placeholder="单据号" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">出库仓库</label>
+                                <select class="form-control selectpicker">
+                                    <option>深圳仓</option>
+                                    <option>深圳仓-1</option>
+                                    <option>深圳仓-2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">入库仓库</label>
+                                <select class="form-control selectpicker">
+                                    <option>深圳仓</option>
+                                    <option>深圳仓-1</option>
+                                    <option>深圳仓-2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">经手人</label>
+                                <input type="text" placeholder="经手人" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">业务部门</label>
+                                <input type="text" placeholder="业务部门" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="input-group mar-btm">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-primary dropdown-toggle" type="button">入库</button>
+                                </div>
+                                <input type="text" placeholder="" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr/>
+        <div class="panel">
+            <div class="panel-heading">
+                 <h4 class="panel-title">子件出库明细</h4>
+
+            </div>
+            <div class="panel-body">
+                <table data-toggle="table" data-url="data/bs-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                    <thead>
+                        <tr>
+                            <th data-field="inventoryName" data-align="center" data-sortable="true">存货名称</th>
+                            <th data-field="stockCode" data-align="center" data-sortable="true" data-formatter="dateFormatter">存货编码</th>
+                            <th data-field="barcode" data-align="center" data-sortable="true" data-sorter="priceSorter">条码</th>
+                            <th data-field="inventoryClassification" data-align="center" data-sortable="true" data-formatter="statusFormatter">存货分类</th>
+                            <th data-field="specification" data-align="center" data-sortable="true" data-formatter="trackFormatter">规格型号</th>
+                            <th data-field="unit" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">单位</th>
+                            <th data-field="warehouse" data-align="center" data-sortable="true">调出仓库</th>
+                            <th data-field="quantity" data-align="center" data-sortable="true" data-formatter="dateFormatter">数量</th>
+                            <th data-field="price" data-align="center" data-sortable="true" data-sorter="priceSorter">单价</th>
+                            <th data-field="unitCost" data-align="center" data-sortable="true" data-formatter="statusFormatter">出库单位成本</th>
+                            <th data-field="outboundCosts" data-align="center" data-sortable="true" data-formatter="trackFormatter">出库成本</th>
+                            <th data-field="unitPrice" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">主单位单价</th>
+                            <th data-field="auxiliaryProperties" data-align="center" data-sortable="true" data-formatter="statusFormatter">辅助属性</th>
+                            <th data-field="mainUnit" data-align="center" data-sortable="true" data-formatter="dateFormatter">主单位</th>
+                            <th data-field="mainUnitNumber" data-align="center" data-sortable="true" data-sorter="priceSorter">主单位数量</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                 <h4 class="panel-title">母件入库明细</h4>
+
+            </div>
+            <div class="panel-body">
+                <table data-toggle="table" data-url="data/bs-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                    <thead>
+                        <tr>
+                            <th data-field="inventoryName" data-align="center" data-sortable="true">存货名称</th>
+                            <th data-field="stockCode" data-align="center" data-sortable="true" data-formatter="dateFormatter">存货编码</th>
+                            <th data-field="inventoryClassification" data-align="center" data-sortable="true" data-formatter="statusFormatter">存货分类</th>
+                            <th data-field="specification" data-align="center" data-sortable="true" data-formatter="trackFormatter">规格型号</th>
+                            <th data-field="unit" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">单位</th>
+                            <th data-field="warehouse" data-align="center" data-sortable="true">调出仓库</th>
+                            <th data-field="quantity" data-align="center" data-sortable="true" data-formatter="dateFormatter">数量</th>
+                            <th data-field="price" data-align="center" data-sortable="true" data-sorter="priceSorter">单价</th>
+                            <th data-field="amount" data-align="center" data-sortable="true" data-formatter="invoiceFormatter">金额</th>
+                            <th data-field="auxiliaryProperties" data-align="center" data-sortable="true" data-formatter="statusFormatter">辅助属性</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <form>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12  col-md-4">
+                            <div id="demo-dp-component2">
+                                <div class="form-group">
+                                    <label class="control-label">折让金额</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4 col-lg-12">
+                            <div class="form-group">
+                                <label class="control-label">备注</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr/>
+        <div class="panel">
+            <!--Accordion title-->
+            <div class="panel-heading">
+                 <h4 class="panel-title">
+					                         <div class="demo-icon"><i class="ion-chevron-down"></i><a data-parent="#accordion" data-toggle="collapse" href="#collapseOne">更多信息</a></div>
+					                    </h4>
+
+            </div>
+            <!--Accordion content-->
+            <div class="panel-collapse collapse in" id="collapseOne">
+                <form>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12  col-md-4">
+                                <div id="demo-dp-component3">
+                                    <div class="form-group date">
+                                        <label class="control-label">结算方式</label>
+                                        <input type="text" placeholder="结算方式" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">经手人</label>
+                                    <input type="text" placeholder="经手人" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">联系人</label>
+                                    <input type="text" placeholder="联系人" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">联系电话</label>
+                                    <input type="text" placeholder="联系电话" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4 col-lg-8">
+                                <div class="form-group">
+                                    <label class="control-label">采购地址</label>
+                                    <input type="text" placeholder="采购地址" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">制单人</label>
+                                    <input type="text" placeholder="制单人" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group date">
+                                    <label class="control-label">创建时间</label>
+                                    <input type="text" placeholder="创建时间" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">修改人</label>
+                                    <input type="text" placeholder="修改人" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label">作废人</label>
+                                    <input type="text" placeholder="作废人" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 col-md-4 col-lg-8">
+                                <div class="form-group date">
+                                    <label class="control-label">作废时间</label>
+                                    <input type="text" placeholder="作废时间" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</content>

@@ -1,0 +1,171 @@
+<content>
+    <ul class="nav navbar-top-links pull-left">
+    <li class="tgl-menu-btn">
+        <a class="mainnav-toggle" href="#"> <i class="ion-navicon-round"></i>
+        </a>
+    </li>
+    <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <i class="fa fa-bell-o"></i>
+
+            <span class="badge badge-header badge-danger"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-md">
+            <div class="pad-all bord-btm">
+                <p class="text-semibold text-main mar-no">预警消息列表</p>
+            </div>
+            <div class="nano scrollable">
+                <div class="nano-content">
+                    <ul class="head-list">
+                        <!-- Dropdown list-->
+                        <li>
+                            <a href="#">
+                                <div class="clearfix">
+                                    <p class="pull-left">库存不足警报</p>
+                                    <p class="pull-right">0.02%</p>
+                                </div>
+                                <div class="progress progress-sm">
+                                    <div style="width: 0.02%;" class="progress-bar">
+                                        <span class="sr-only">0.02% Complete</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- Dropdown list-->
+                        <li>
+                            <a class="media" href="#">
+                                <span class="badge label-danger pull-right">-0.12%</span>
+                                <div class="media-left"> <i class="demo-pli-data-settings icon-2x"></i>
+
+                                </div>
+                                <div class="media-body">
+                                    <div class="text-nowrap">负库存警报</div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- Dropdown list-->
+                        <li>
+                            <a class="media" href="#">
+                                <div class="media-left"> <i class="demo-pli-file-edit icon-2x"></i>
+
+                                </div>
+                                <div class="media-body">
+                                    <div class="text-nowrap">应收超信用警报</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Dropdown footer-->
+            <div class="pad-all bord-top">
+                <a href="#" class="btn-link text-dark box-block"> <i class="fa fa-angle-right fa-lg pull-right"></i>显示所有通知</a>
+            </div>
+        </div>
+    </li>
+</ul>
+<ul class="nav navbar-top-links pull-right">
+    <li class="dropdown">
+        <a id="demo-lang-switch" class="lang-selector dropdown-toggle" href="#" data-toggle="dropdown">
+            <span class="lang-selected">
+                <img class="lang-flag" src="images/united-kingdom.png" alt="English" />
+            </span>
+        </a>
+        <!--Language selector menu-->
+        <ul class="head-list dropdown-menu">
+            <li>
+                <!--English-->
+                <a href="#" class="active">
+                    <img class="lang-flag" src="images/united-kingdom.png" alt="English" />
+                    <span class="lang-id">EN</span>
+                    <span class="lang-name">English</span>
+                </a>
+            </li>
+            <li>
+                <!--France-->
+                <a href="#">
+                    <img class="lang-flag" src="images/france.png" alt="France" />
+                    <span class="lang-id">FR</span>
+                    <span class="lang-name">Fran&ccedil;ais</span>
+                </a>
+            </li>
+            <li>
+                <!--Germany-->
+                <a href="#">
+                    <img class="lang-flag" src="images/germany.png" alt="Germany" />
+                    <span class="lang-id">DE</span>
+                    <span class="lang-name">Deutsch</span>
+                </a>
+            </li>
+            <li>
+                <!--Italy-->
+                <a href="#">
+                    <img class="lang-flag" src="images/italy.png" alt="Italy" />
+                    <span class="lang-id">IT</span>
+                    <span class="lang-name">Italiano</span>
+                </a>
+            </li>
+            <li>
+                <!--Spain-->
+                <a href="#">
+                    <img class="lang-flag" src="images/spain.png" alt="Spain" />
+                    <span class="lang-id">ES</span>
+                    <span class="lang-name">Espa&ntilde;ol</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li id="dropdown-user" class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+            <span class="pull-right">
+                <img class="img-circle img-user media-object" src="images/1.png" alt="Profile Picture"/> 
+                <!--<i class="demo-pli-male ic-user"></i>-->
+            </span>
+            <div class="username hidden-xs">张三</div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-md dropdown-menu-right panel-default">
+            <!-- Dropdown heading -->
+            <div class="pad-all bord-btm">
+                <p class="text-main mar-btm">
+                    <span class="text-bold">750GB</span>of 1,000GB Used</p>
+                <div class="progress progress-sm">
+                    <div class="progress-bar" style="width: 70%;">
+                        <span class="sr-only">70%</span>
+                    </div>
+                </div>
+            </div>
+            <!-- User dropdown menu -->
+            <ul class="head-list">
+                <li>
+                    <a href="#"> <i class="demo-pli-male icon-lg icon-fw"></i> 个人主页</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="badge badge-danger pull-right">9</span> <i class="demo-pli-mail icon-lg icon-fw"></i> 消息</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="label label-success pull-right">New</span> <i class="demo-pli-gear icon-lg icon-fw"></i> 设置</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="demo-pli-information icon-lg icon-fw"></i> 帮助</a>
+                </li>
+                <li>
+                    <a href="#"> <i class="demo-pli-computer-secure icon-lg icon-fw"></i> 锁屏</a>
+                </li>
+            </ul>
+            <!-- Dropdown footer -->
+            <div class="pad-all text-right">
+                <!--<a href="pages-login.html" class="btn btn-primary">-->
+                <a href="login" class="btn btn-primary"> <i class="demo-pli-unlock"></i> 注销</a>
+            </div>
+        </div>
+    </li>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!--End user dropdown-->
+    <li>
+        <a href="#" class="aside-toggle navbar-aside-icon"> <i class="pci-ver-dots"></i>
+
+        </a>
+    </li>
+</ul>
+</content>

@@ -1,0 +1,117 @@
+<content>
+    <div id="page-title">
+         <h1 class="page-header text-overflow">自购</h1>
+    </div>
+    <ol class="breadcrumb">
+        <li> <a href="index">首页</a>
+        </li>
+        <li class="active">自购</li>
+    </ol>
+    <div id="page-content">
+        <div class="panel">
+            <form>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group date">
+                                <label class="col-lg-3 control-label">单据日期</label>
+                                <input type="text" placeholder="单据日期" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">单据号</label>
+                                <input type="text" placeholder="单据号" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">项目名称</label>
+                                <input type="text" placeholder="项目名称" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">数量</label>
+                                <input type="text" placeholder="数量" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">预算单价</label>
+                                <input type="text" placeholder="预算单价" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">预算总金额</label>
+                                <input type="text" placeholder="预算总金额" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">进口产品</label>
+                                <select class="form-control selectpicker">
+                                    <option>是</option>
+                                    <option>否</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">现有数量</label>
+                                <input type="text" placeholder="现有数量" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">负责人电话</label>
+                                <input type="text" placeholder="负责人电话" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">购置部门</label>
+                                <input type="text" placeholder="购置部门" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="form-group">
+                                <label class="control-label">购置说明</label>
+                                <textarea class="form-control" style="resize:none" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr/>
+        <div class="panel">
+            <div class="panel-heading">
+                 <h4 class="panel-title">申购清单</h4>
+            </div>
+            <div class="panel-body">
+                <table data-toggle="table" data-url="data/bs-table.json" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="true" data-show-pagination-switch="true">
+                    <thead>
+                        <tr>
+                            <th data-field="inventoryName" data-align="center" data-sortable="true">货品名称</th>
+                            <th data-field="specification" data-align="center" data-sortable="true">规格型号</th>
+                            <th data-field="unit" data-align="center" data-sortable="true" >单位</th>
+                            <th data-field="quantity" data-align="center" data-sortable="true">数量</th>
+                            <th data-field="price" data-align="center" data-sortable="true">单价</th>
+                            <th data-field="totalBudget" data-align="center" data-sortable="true">预算总额</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</content>

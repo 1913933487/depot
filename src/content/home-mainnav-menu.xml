@@ -1,0 +1,221 @@
+<content>
+     <div id="mainnav">
+    <div id="mainnav-menu-wrap">
+        <div class="nano">
+            <div class="nano-content">
+                <div id="mainnav-profile" class="mainnav-profile">
+                    <div class="profile-wrap">
+                        <div class="pad-btm">
+                            <span class="label label-success pull-right">New</span>
+                            <img class="img-circle img-sm img-border" src="images/1.png" alt="Profile Picture" />
+                        </div>
+                        <a href="#profile-nav" class="box-block" data-toggle="collapse" aria-expanded="false">
+                            <span class="pull-right dropdown-toggle"> <i class="dropdown-caret"></i>
+
+                            </span>
+                            <p class="mnp-name">张三</p>
+                            <span class="mnp-desc">zhangsan@themeon.net</span>
+                        </a>
+                    </div>
+                    <div id="profile-nav" class="collapse list-group bg-trans">
+                        <a href="#" class="list-group-item"> <i class="demo-pli-male icon-lg icon-fw"></i> 个人主页</a>
+                        <a href="#" class="list-group-item"> <i class="demo-pli-gear icon-lg icon-fw"></i> 设置</a>
+                        <a href="#" class="list-group-item"> <i class="demo-pli-information icon-lg icon-fw"></i> 帮助</a>
+                        <a href="#" class="list-group-item"> <i class="demo-pli-unlock icon-lg icon-fw"></i> 注销</a>
+                    </div>
+                </div>
+                <div id="mainnav-shortcut">
+                    <ul class="list-unstyled">
+                        <li class="col-xs-3" data-content="我的简历">
+                            <a class="shortcut-grid" href="#"> <i class="demo-psi-male"></i>
+                            </a>
+                        </li>
+                        <li class="col-xs-3" data-content="消息">
+                            <a class="shortcut-grid" href="#"> <i class="demo-psi-speech-bubble-3"></i>
+                            </a>
+                        </li>
+                        <li class="col-xs-3" data-content="活动">
+                            <a class="shortcut-grid" href="#"> <i class="demo-psi-thunder"></i>
+                            </a>
+                        </li>
+                        <li class="col-xs-3" data-content="锁屏">
+                            <a class="shortcut-grid" href="#"> <i class="demo-psi-lock-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul id="mainnav-menu" class="list-group">
+                    <li>
+                        <a href="index"> <i class="demo-psi-home"></i>
+                            <span class="menu-title">	<strong>首页</strong>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-divider"></li>
+                    <li class="list-header">Managements</li>
+                    
+                    <li>
+                        <a href="#"> <i class="ion-compose"></i>
+                            <span class="menu-title">采购管理</span><i class="arrow"></i>
+                        </a>
+                        <ul class="collapse">
+                            <li>
+                                <a href="/procurementSummary">采购汇总</a>
+                            </li>
+                            <li>
+                                <a href="#">采购单据</a>
+                                <!--<ul class="collapse">-->
+                                <!--    <li>-->
+                                <!--        <a href="#">申购单<i class="arrow"></i></a>-->
+                                <!--        <ul class="collapse">-->
+                                <!--            <li><a href="/sincePurchase">自购</a></li>-->
+                                <!--            <li><a href="/centralizedPurchasing">集中采购</a></li>-->
+                                <!--        </ul>-->
+                                <!--    </li>-->
+                                <!--    <li><a href="/orderInfo">订单</a></li>-->
+                                <!--    <li><a href="#">合并单</a></li>-->
+                                <!--    <li><a href="/depositApplicationOrder">定金申请单</a></li>-->
+                                <!--    <li><a href="/returnOrder">退货单</a></li>-->
+                                <!--    <li><a href="/splitOrder">分拆单</a></li>-->
+                                <!--</ul>-->
+                            </li>
+                            <li><a href="#">采购计划</a></li>
+                            <li><a href="#">直订管理</a></li>
+                            <li><a href="#">紧急采购</a></li>
+                            <li><a href="#">询价管理</a></li>
+                            <li><a href="#">竞价管理</a></li>
+                            <li><a href="#">采购合同</a></li>
+                            <li><a href="#">退货处理</a></li>
+                            <li><a href="#">采购设置</a></li>
+                            <li><a href="#">报表查询</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#"> <i class="ion-ios-cart-outline"></i>
+                            <span class="menu-title">收货管理</span><i class="arrow"></i>
+                        </a>
+                        <ul class="collapse">
+                            <li><a href="#">收货提醒</a></li>
+                            <li><a href="#">验收处理</a></li>
+                            <li><a href="#">直拨处理</a></li>
+                            <li><a href="#">拒收处理</a></li>
+                            <li><a href="#">收货设置</a></li>
+                            <li><a href="#">报表查询</a></li>
+                        </ul>
+                    </li>                    
+                    
+                    <li>
+                        <a href="#"> <i class="ion-home"></i>
+                            <span class="menu-title">仓库管理</span><i class="arrow"></i>
+                        </a>
+                        <ul class="collapse">
+                            <li><a href="#">入库审核</a></li>
+                            <li><a href="#">领货处理</a></li>
+                            <li><a href="#">调拨管理</a></li>
+                            <li><a href="#">报损管理</a></li>
+                            <li><a href="#">盘点管理</a></li>
+                            <li><a href="#">退货管理</a></li>
+                            <li><a href="#">仓库架构</a></li>
+                            <li><a href="#">物品设置</a></li>
+                            <li><a href="#">报表查询</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#"> <i class="ion-ios-calculator-outline"></i>
+                            <span class="menu-title">应付管理</span><i class="arrow"></i>
+                        </a>
+                        <ul class="collapse">
+                            <li><a href="#">支付提醒</a></li>
+                            <li><a href="#">支付申请</a></li>
+                            <li><a href="#">支付通知</a></li>
+                            <li><a href="#">出纳管理</a></li>
+                            <li><a href="#">支付设置</a></li>
+                            <li><a href="#">报表查询</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#"> <i class="ion-clipboard"></i>
+                            <span class="menu-title">成本管理</span><i class="arrow"></i>
+                        </a>
+                        <ul class="collapse">
+                            <li><a href="#">单据审核</a></li>
+                            <li><a href="#">盘点管理</a></li>
+                            <li><a href="#">市场调查</a></li>
+                            <li><a href="#">竞价协调</a></li>
+                            <li><a href="#">成本分析</a></li>
+                            <li><a href="#">成本设置</a></li>
+                            <li><a href="#">报表查询</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li> 
+                        <a href="#"> <i class="ion-ios-person"></i>
+                            <span class="menu-title">供应商管理</span><i class="arrow"></i>
+                        </a>
+                        <ul class="collapse">
+                            <li><a href="#">供应商信息</a></li>
+                            <li><a href="#">调查审核</a></li>
+                            <li><a href="#">评估记录</a></li>
+                            <li><a href="#">供应商申诉</a></li>
+                            <li><a href="#">问卷调查</a></li>
+                            <li><a href="/suplierSetting">供应商设置</a></li>
+                            <li><a href="#">报表查询</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!--<li>-->
+                    <!--    <a href="#"> <i class="ion-social-usd"></i>-->
+                    <!--        <span class="menu-title">财务管理</span><i class="arrow"></i>-->
+                    <!--    </a>-->
+                    <!--    <ul class="collapse">-->
+                    <!--        <li><a href="/financeReceipt">收款单/付款单</a></li>-->
+                    <!--        <li><a href="/financeWrite">核销处理</a></li>-->
+                    <!--        <li><a href="/financeCope">应付/应收</a></li>-->
+                    <!--    </ul>-->
+                    <!--</li>-->
+                    
+                    <li>
+                        <a href="#"> <i class="ion-ios-people"></i>
+                            <span class="menu-title">其他部门</span><i class="arrow"></i>
+                        </a>
+                        <ul class="collapse">
+                            <li><a href="#">二级仓库管理</a></li>
+                            <li><a href="#">申购单</a></li>
+                            <li><a href="#">领货申请</a></li>
+                            <li><a href="#">直订单</a></li>
+                            <li><a href="#">报损单</a></li>
+                            <li><a href="#">退仓单</a></li>
+                            <li><a href="#">自盘单</a></li>
+                            <li><a href="#">评估单</a></li>
+                            <li><a href="#">紧急采购单</a></li>
+                            <li><a href="#">调拨单</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#"> <i class="ion-speedometer"></i>
+                            <span class="menu-title">业务协调统筹监控</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#"> <i class="ion-eye"></i>
+                            <span class="menu-title">集团层面监控</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/charts"> <i class="demo-psi-bar-chart"></i>
+                            <span class="menu-title">报表</span>
+                        </a>
+                    </li>
+                    <li class="list-divider"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</content>
